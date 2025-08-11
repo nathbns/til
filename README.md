@@ -8,14 +8,14 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 ## machine_learning
 
-## LLMs
+## llm
 
-## Computer_science
+## computer_science
 
-# Python
+# python
 
-# Pytorch
+# pytorch
 
-# DSA Algo's
+# dsa algo's
 
-[How to implement a segment tree] - 2025-08-11
+- [How to implement a segment tree](https://github.com/nathbns/til/blob/main/dsa_algos/segment_tree.md) - 2025-08-11
