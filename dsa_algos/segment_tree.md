@@ -4,112 +4,57 @@ A segment tree is a binary tree data structure used for efficient range queries 
 - When you need to answer range queries (like sum, min, max) and also update elements efficiently.
 - Examples: Range sum queries, range minimum/maximum queries, dynamic interval problems.
 
-**Python Implementation Example:**
+**Python Implementation Example on Leetcode 307. Range Sum Query - Mutable:**
 
 
 
 ```python
-from __future__ import annotations
-from typing import Callable, Generic, List, TypeVar
-import math
+class NumArray:
+    def __init__(self, nums: List[int], L: int = 0, R: int | None = None):
+        if R is None: 
+            R = len(nums) - 1
+        self.L, self.R = L, R
 
-T = TypeVar("T")
+        if L == R:    
+            self.sum   = nums[L]
+            self.left  = None
+            self.right = None
+        else:          
+            M = (L + R) // 2
+            self.left  = NumArray(nums, L, M)
+            self.right = NumArray(nums, M + 1, R)
+            self.sum   = self.left.sum + self.right.sum
 
+    def update(self, index: int, val: int) -> None:
+        if self.L == self.R:
+            self.sum = val
+            return
+        M = (self.L + self.R) // 2
+        if index > M:
+            self.right.update(index, val)
+        else:
+            self.left.update(index, val)
+        self.sum = self.left.sum + self.right.sum
 
-class SegmentTree(Generic[T]):
-    """Segment tree itératif générique.
+    def sumRange(self, left: int, right: int) -> int:
+        if self.L == left and self.R == right:
+            return self.sum
+        M = (self.L + self.R) // 2
+        if left > M:
+            return self.right.sumRange(left, right)
+        elif right <= M:
+            return self.left.sumRange(left, right)
+        else: 
+            return (self.left.sumRange(left, M) + self.right.sumRange(M + 1, right))
 
-    - Indices 0-based
-    - `query(left, right)` utilise des bornes inclusives [left, right]
-    - `operation` est associative (ex: sum, min, max)
-    - `identity` est l'élément neutre pour `operation` (ex: 0 pour sum, +inf pour min)
-    """
-
-    def __init__(
-        self,
-        data: List[T],
-        operation: Callable[[T, T], T] = lambda a, b: a + b,
-        identity: T = 0,  # 0 pour la somme
-    ) -> None:
-        if not data:
-            raise ValueError("'data' ne doit pas être vide")
-        self.operation = operation
-        self.identity = identity
-
-        # Taille = puissance de 2 >= n
-        n = len(data)
-        size = 1
-        while size < n:
-            size <<= 1
-        self._size = size
-
-        # Arbre à 1-based indexing logique (racine à 1)
-        self._tree: List[T] = [identity] * (2 * size)
-
-        # Build: placer les feuilles puis remonter
-        self._tree[size : size + n] = data
-        for i in range(size - 1, 0, -1):
-            self._tree[i] = self.operation(self._tree[2 * i], self._tree[2 * i + 1])
-
-    def update(self, index: int, value: T) -> None:
-        """Met à jour la valeur à `index` (point update)."""
-        if index < 0:
-            raise IndexError("index < 0")
-        pos = index + self._size
-        if pos >= len(self._tree):
-            raise IndexError("index hors limites")
-        self._tree[pos] = value
-        pos //= 2
-        while pos >= 1:
-            self._tree[pos] = self.operation(self._tree[2 * pos], self._tree[2 * pos + 1])
-            pos //= 2
-
-    def query(self, left: int, right: int) -> T:
-        """Retourne l'agrégat sur l'intervalle inclusif [left, right]."""
-        if left < 0 or right < 0:
-            raise IndexError("indices négatifs interdits")
-        if right < left:
-            raise ValueError("right doit être >= left")
-
-        l = left + self._size
-        r = right + self._size
-        if l >= len(self._tree) or r >= len(self._tree):
-            raise IndexError("intervalle hors limites")
-
-        res_left: T = self.identity
-        res_right: T = self.identity
-        while l <= r:
-            if (l & 1) == 1:  # l est un fils droit
-                res_left = self.operation(res_left, self._tree[l])
-                l += 1
-            if (r & 1) == 0:  # r est un fils gauche
-                res_right = self.operation(self._tree[r], res_right)
-                r -= 1
-            l //= 2
-            r //= 2
-        return self.operation(res_left, res_right)
-
-
-if __name__ == "__main__":
-    # Exemple d'utilisation (somme par défaut)
-    st = SegmentTree([1, 3, 5, 7, 9, 11])
-    print(st.query(1, 3))  # 3 + 5 + 7 = 15
-    st.update(1, 10)
-    print(st.query(1, 3))  # 10 + 5 + 7 = 22
-
-    # Variante: minimum (identité = +inf)
-    st_min = SegmentTree([4, 2, 6, 1, 5], operation=min, identity=math.inf)
-    print(st_min.query(0, 4))  # 1
+# Your NumArray object will be instantiated and called as such:
+# obj = NumArray(nums)
+# obj.update(index,val)
+# param_2 = obj.sumRange(left,right)
 ```
 
 **Complexité**
 
 - Build: O(n)
-- **query** (intervalle): O(log n)
+- **query** (interval): O(log n)
 - **update** (point): O(log n)
-
-Notes:
-
-- Les indices sont 0-based et les intervalles sont inclusifs.
-- Pour un segment tree max, utilisez `operation=max` et `identity=-math.inf`.
-
