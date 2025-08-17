@@ -10,6 +10,12 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 ## llm
 
+## tokenizer
+
+- [How normalization work](https://github.com/nathbns/til/blob/main/tokenizer/normalization.md) - 2025-08-17
+- [How pre-tokenizer work](https://github.com/nathbns/til/blob/main/tokenizer/pre_tokenizer.md) - 2025-08-17
+- [How tokenizer of gpt work ? The BPE(Byte Pair Encoding)](https://github.com/nathbns/til/blob/main/tokenizer/bpe.md) - 2025-08-17
+
 ## computer_science
 
 # python
