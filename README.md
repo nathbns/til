@@ -28,6 +28,10 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 # pytorch
 
+# hugging face
+
+- [How to push your code to the hugging face space](https://dev.to/koolkamalkishor/how-to-upload-your-project-to-hugging-face-spaces-a-beginners-step-by-step-guide-1pkn) - 2025-08-23
+
 # dsa algo's
 
 - [How to implement a segment tree](https://github.com/nathbns/til/blob/main/dsa_algos/segment_tree.md) - 2025-08-11
