@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-5 TILs so far. 
+6 TILs so far. 
 
 ## book
 
@@ -20,7 +20,11 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 ## computer_science
 
-# python
+## python
+
+### gradio
+
+- [How to built my first gradio app](https://www.gradio.app/) - 2025-08-23
 
 # pytorch
 
