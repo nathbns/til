@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-6 TILs so far. 
+7 TILs so far. 
 
 ## book
 
