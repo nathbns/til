@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-10 TILs so far.
+11 TILs so far.
 
 ## book
 
@@ -40,3 +40,4 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 # dsa algo's
 
 - [How to implement a segment tree](https://github.com/nathbns/til/blob/main/dsa_algos/segment_tree.md) - 2025-08-11
+- [How to implement Dijkstra algo's on graph](https://github.com/nathbns/til/blob/main/dsa_algos/dijkstra.md) - 2025-08-29
