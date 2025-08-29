@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-8 TILs so far. 
+10 TILs so far.
 
 ## book
 
@@ -35,6 +35,7 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 # golang
 
 - [How to code with go - intro course](https://gobyexample.com/) - 2025-08-25
+- [Build a cli tool for simplifie navigating in github](https://github.com/nathbns/gitact) - 2025-08-29
 
 # dsa algo's
 
