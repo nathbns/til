@@ -4,7 +4,7 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 11 TILs so far.
 
-You can also find this content on my [website](https://github.com/simonw/til).
+You can also find this content on my [website](https://nathan-bensoussan.vercel.app/blog).
 
 ![image](blog_website.png)
 
