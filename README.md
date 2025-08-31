@@ -4,6 +4,10 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 11 TILs so far.
 
+You can also find this content on my [website](https://github.com/simonw/til).
+
+![image](blog_website.png)
+
 ## book
 
 - [Deep Learning for Coders with Fastai and PyTorch](https://course.fast.ai/Resources/book.html) - 2025-08-18
