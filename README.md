@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-10 TILs so far.
+11 TILs so far.
 
 ## book
 
@@ -12,9 +12,7 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 ### deep learning
 
-- [Learn about CNN | CRNN](https://medium.com/@pavitharan2020/building-a-handwriting-recognition-system-with-crnn-a-beginners-guide-58a51a46dd15) - 2025-09-20
-
-(project coming...)
+- [Learn about CNN | CRNN](https://medium.com/@pavitharan2020/building-a-handwriting-recognition-system-with-crnn-a-beginners-guide-58a51a46dd15) - 2025-09-20 (project coming...)
 
 ### llm
 
