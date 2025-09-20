@@ -2,13 +2,19 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-10 TILs so far.
+11 TILs so far.
 
 ## book
 
 - [Deep Learning for Coders with Fastai and PyTorch](https://course.fast.ai/Resources/book.html) - 2025-08-18
 
 ## machine_learning
+
+### deep learning
+
+- [Learn about CNN | CRNN](https://medium.com/@pavitharan2020/building-a-handwriting-recognition-system-with-crnn-a-beginners-guide-58a51a46dd15) - 2025-09-20
+
+(project coming...)
 
 ### llm
 
@@ -40,3 +46,4 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 # dsa algo's
 
 - [How to implement a segment tree](https://github.com/nathbns/til/blob/main/dsa_algos/segment_tree.md) - 2025-08-11
+- [How to implement Dijkstra algo's on graph](https://github.com/nathbns/til/blob/main/dsa_algos/dijkstra.md) - 2025-08-29
