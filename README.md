@@ -26,6 +26,10 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 ## computer_science
 
+## java
+
+- [code first mini-project in java] (pushing the code soon...) - 2025-10-22
+
 ## python
 
 ### gradio
