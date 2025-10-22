@@ -12,7 +12,9 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 ### deep learning
 
-- [Learn about CNN | CRNN](https://medium.com/@pavitharan2020/building-a-handwriting-recognition-system-with-crnn-a-beginners-guide-58a51a46dd15) - 2025-09-20 (project coming...)
+- [Learn about CNN | CRNN](https://medium.com/@pavitharan2020/building-a-handwriting-recognition-system-with-crnn-a-beginners-guide-58a51a46dd15) - 2025-09-20
+
+- [re-code from scratch YOLO version 1](https://github.com/nathbns/lifprojet_am1_nn/tree/main/yolov1_from_scratch) - 2025-10-22
 
 ### llm
 
