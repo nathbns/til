@@ -42,6 +42,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 - [How to push your code to the hugging face space](https://dev.to/koolkamalkishor/how-to-upload-your-project-to-hugging-face-spaces-a-beginners-step-by-step-guide-1pkn) - 2025-08-23
 
+- [Push my very first dataset on HF, ~42000 chess piece img made of 670 pictures of my chessboard](https://github.com/nathbns/til/blob/main/datasets/chess_yoco.md)
+
 # golang
 
 - [How to code with go - intro course](https://gobyexample.com/) - 2025-08-25
